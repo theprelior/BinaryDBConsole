@@ -49,7 +49,7 @@ To get started with the My Simple Binary File Database project, follow these ste
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/your-username/my-simple-binary-database.git
+git clone https://github.com/theprelior/BinaryDBConsole.git
 
 2.Compile and run the project using your preferred Java development environment.
 
