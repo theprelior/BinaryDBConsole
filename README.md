@@ -46,9 +46,11 @@ j. **Order Records (with using index):** Orders all records in the table accordi
 
 To get started with the My Simple Binary File Database project, follow these steps:
 
-1. Clone the repository:
+
 
 ```shell
+1. Clone the repository:
+
 git clone https://github.com/theprelior/BinaryDBConsole.git
 
 2.Compile and run the project using your preferred Java development environment.
