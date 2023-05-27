@@ -47,7 +47,12 @@ public class Database3 {
     static int INT_SIZE = 4; 
     static int CHAR_SIZE = 20; 
     
-    
+    /**
+	 * Sorts a two-dimensional array by the specified column in descending order.
+	 *
+	 * @param arr    The array to be sorted.
+	 * @param column The index of the column to sort by.
+     */
     public static void sortArrayByColumnDescending(Object[][] arr, int column) {
         Arrays.sort(arr, new Comparator<Object[]>() {
             @Override
@@ -63,6 +68,12 @@ public class Database3 {
         });
     }
     
+     /**
+	 * Sorts a two-dimensional array by the specified column in ascending order.
+	 *
+	 * @param arr    The array to be sorted.
+	 * @param column The index of the column to sort by.
+     */
     public static void sortArrayByColumnAscending(Object[][] arr, int column) {
 	    Arrays.sort(arr, new Comparator<Object[]>() {
 	        @Override
@@ -78,6 +89,13 @@ public class Database3 {
 	        }
 	    });
 	}
+	
+	/**
+	 * Reads data from a binary file, populates a two-dimensional array, and sorts it in ascending order by a specified column index.
+	 * Prints the sorted array to the console.
+	 *
+	 * @throws IOException If there is an error in reading the binary file.
+	 */
     
     public static void ascendingOrderListByIndex() throws IOException {
     	Scanner scanner = new Scanner(System.in);
@@ -131,7 +149,7 @@ public class Database3 {
    		
    	    }
     	
-    	System.out.println("Kucukten buyuge Sort etmek istenen kolonu giriniz:");
+    	System.out.println("Select the column that you want to be sorted by ascending order:");
     	int c=scanner.nextInt();
     	sortArrayByColumnAscending(data,c);
 		 for (Object[] row : data) {
